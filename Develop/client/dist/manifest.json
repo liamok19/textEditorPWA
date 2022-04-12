@@ -32,11 +32,11 @@
     }
   ],
   "name": "Just Another Text Editor",
-  "short_name": "JEST",
+  "short_name": "JATE",
   "orientation": "portrait",
   "display": "standalone",
   "start_url": "/",
-  "description": "ext Editor going offline",
+  "description": "Text Editor going offline",
   "background_color": "#a32247",
   "theme_color": "#a32247"
 }
