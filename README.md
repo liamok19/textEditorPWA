@@ -34,8 +34,8 @@ SO THAT I can reliably retrieve them for later use
 |<del> WHEN I run the text editor application from my terminal</del> |<del> THEN I find that my JavaScript files have been bundled using webpack </del>|
 |<del> WHEN I run my webpack plugins </del> | <del> THEN I find that I have a generated HTML file, service worker, and a manifest file </del> |
 |<del> WHEN I use next-gen JavaScript in my application </del>|<del> THEN I find that the text editor still functions in the browser without errors</del> |
-|WHEN I open the text editor |THEN I find that IndexedDB has immediately created a database storage |
-| WHEN I enter content and subsequently click off of the DOM window |THEN I find that the content in the text editor has been saved with IndexedDB |
+|<del> WHEN I open the text editor</del>  | <del>THEN I find that IndexedDB has immediately created a database storage </del>  |
+|<del>  WHEN I enter content and subsequently click off of the DOM window </del> |<del>THEN I find that the content in the text editor has been saved with IndexedDB </del> |
 |WHEN I reopen the text editor after closing it |THEN I find that the content in the text editor has been retrieved from our IndexedDB |
 |<del> WHEN I click on the Install button </del> |<del> THEN I download my web application as an icon on my desktop </del> |
 |<del> WHEN I load my web application </del> |<del> THEN I should have a registered service worker using workbox </del> |

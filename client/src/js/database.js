@@ -3,23 +3,24 @@ import { openDB } from 'idb';
 const initdb = async () =>
   openDB('jate', 1, {
     upgrade(db) {
-      if (db.objectStoreNames.contains('editor')) {
-        console.log('editor database already exists');
+      if (db.objectStoreNames.contains('jate')) {
+        console.log('jate database already exists');
         return;
       }
-      db.createObjectStore('editor', { keyPath: 'id', autoIncrement: true });
-      console.log('editor database created');
+      db.createObjectStore('jate', { keyPath: 'id', autoIncrement: true });
+      console.log('jate database created');
     },
   });
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {
+  console.log('putDB active');
 //connect to DB and the version we want to use
 const jateDb = await openDB('jate', 1);
 //create transation and specify DB
-const tx = jateDb.transaction('editor', 'readwrite');
+const tx = jateDb.transaction('jate', 'readwrite');
 //open up desired objectSTore
-const store = tx.objectStore('editor'); 
+const store = tx.objectStore('jate'); 
 //use the .put method to update the DB 
 //set id aswell
 const request = store.put({id:1, value: content})
@@ -31,14 +32,16 @@ console.log('🚀 - data saved to the database', result);
 
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
+  console.log('getDB active');
+
   // Create a connection to the database database and version we want to use.
   const jateDb = await openDB('jate', 1);
 
   // Create a new transaction and specify the database and data privileges.
-  const tx = jateDb.transaction('editor', 'readonly');
+  const tx = jateDb.transaction('jate', 'readonly');
 
   // Open up the desired object store.
-  const store = tx.objectStore('editor');
+  const store = tx.objectStore('jate');
 
   // Use the .getAll() method to get all data in the database.
   const request = store.get(1);
