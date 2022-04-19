@@ -6,7 +6,8 @@
 - [License](#license)
 - [UserStory](#userstory)
 - [Usage](#usage)
-- [Model](#model)
+- [References](#references)
+
 
 
 ## Description
@@ -16,6 +17,8 @@ A text editor that runs in the browser. The app will be a single-page applicatio
 Packages included are: `idb`
 
 - Deployed to Heroku: 
+
+https://lo-texteditor-pwa.herokuapp.com/
 
 ## License
 This project is available under the MIT license. Visit [License: MIT](https://opensource.org/licenses/MIT) for full license text
@@ -40,5 +43,16 @@ SO THAT I can reliably retrieve them for later use
 |<del> WHEN I click on the Install button </del> |<del> THEN I download my web application as an icon on my desktop </del> |
 |<del> WHEN I load my web application </del> |<del> THEN I should have a registered service worker using workbox </del> |
 |<del> WHEN I register a service worker </del> |<del> THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets </del> |
-|WHEN I deploy to Heroku |THEN I should have proper build scripts for a webpack application |
+|<del> WHEN I deploy to Heroku </del> |<del> THEN I should have proper build scripts for a webpack application </del> |
 
+
+
+## Usage
+# Final Look
+![look_final](./images/final_look.png)
+
+## References
+1. Liam O'Kane
+    1. Github: https://github.com/liamok19
+    2. Email: liamokane19@gmail.com
+    3. Portfolio: https://liamok19.github.io/liamokane_updated_portfolio/
